@@ -18,7 +18,8 @@
         android:background="@drawable/rounded_corners"
         android:backgroundTint="#2ca5f5"
         android:layout_weight="1"
-        android:layout_marginBottom="5dp">
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnWeight">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -85,7 +86,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="#916bcd"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:id="@+id/btnYoga">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -153,7 +155,8 @@
         android:background="@drawable/rounded_corners"
         android:backgroundTint="#52ad56"
         android:layout_weight="1"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnCardio">
 
         <ImageView
             android:layout_width="wrap_content"
