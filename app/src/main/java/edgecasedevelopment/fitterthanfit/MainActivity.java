@@ -1,5 +1,6 @@
 package edgecasedevelopment.fitterthanfit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXERCISE_WEIGHTS = "Weight lifting";
     public static final String EXERCISE_YOGA = "Yoga";
     public static final String EXERCISE_CARDIO = "Cardio";
+    public static final String EXTRA_ITEM_TITLE = "extra.item.title";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadDetailActivity(String exerciseTitle){
-
+        //Tells the manager what to activity to start (FROM, TO)
+        Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+        //Adds info to send into the next activity
+        intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);
+        //Starts the next activity
+        startActivity(intent);
     }
 }
